@@ -1,7 +1,10 @@
+import Dashboard from "./components/Dashboard";
+import classes from "./App.module.css";
+
 function App() {
   return (
-    <div>
-      <h1>hello world!</h1>
+    <div className={classes.container}>
+      <Dashboard />
     </div>
   );
 }

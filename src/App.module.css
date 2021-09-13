@@ -1,0 +1,5 @@
+.container {
+    height: 100vh;
+    background-color: var(--Verydarkblue);
+    padding: 40px 20px;
+}

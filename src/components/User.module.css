@@ -1,0 +1,82 @@
+.container {
+  background-color: var(--Darkblue);
+  border-radius: 15px;
+}
+.user {
+  background-color: var(--Blue);
+  padding: 35px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-radius: 15px;
+}
+.user img {
+  height: 75px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.userData p {
+  color: var(--Pale-Blue);
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.userData h1 {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+}
+.dateOptions {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+}
+.dateOptions p {
+  color: var(--Pale-Blue);
+  cursor: pointer;
+}
+.dateOptions p:hover {
+  color: white;
+}
+
+/* State */
+.activeDate {
+  color: white !important;
+}
+
+/* Iphone XS MAX */
+@media (min-width: 414px) {
+  .user img {
+    height: 80px;
+  }
+}
+
+/* >= 550px */
+@media (min-width: 550px) {
+  .user {
+    justify-content: center;
+    padding: 35px 30px;
+    gap: 35px;
+  }
+  .user img {
+    height: 100px;
+  }
+  .userData p {
+    font-size: 18px;
+  }
+  .userData h1 {
+    font-size: 35px;
+  }
+  .dateOptions p {
+    font-size: 20px;
+  }
+}
+
+/* Ipad */
+@media (min-width: 768px) {
+  .userData h1 {
+    font-size: 45px;
+  }
+  .dateOptions p {
+    font-size: 22px;
+  }
+}
