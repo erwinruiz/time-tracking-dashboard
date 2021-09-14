@@ -14,15 +14,14 @@
   --Verydarkblue: hsl(226, 43%, 10%);
   --Darkblue: hsl(235, 46%, 20%);
   --Desaturatedblue: hsl(235, 45%, 61%);
-  --Pale-Blue: hsl(236, 100%, 87%);
+  /* --Pale-Blue: hsl(236, 100%, 87%); */
+  --Pale-Blue: hsla(236, 100%, 87%, 0.5);
 }
 * {
   margin: 0;
 }
 
 body {
-  /* - Font size: 18px (card titles e.g. Work, Play) */
-  /* - Weights: 300, 400, 500 */
   font-size: 18px;
   font-family: "Rubik", sans-serif;
 }

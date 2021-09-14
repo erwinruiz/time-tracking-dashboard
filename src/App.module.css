@@ -1,5 +1,14 @@
 .container {
-    min-height: 100vh;
-    background-color: var(--Verydarkblue);
-    padding: 40px 20px;
+  min-height: 100vh;
+  background-color: var(--Verydarkblue);
+  padding: 40px 20px;
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
 }

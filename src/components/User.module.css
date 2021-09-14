@@ -80,3 +80,32 @@
     font-size: 22px;
   }
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    width: 30%;
+  }
+  .user {
+    padding: 35px 30px 45px 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .user img {
+    height: 70px;
+  }
+  .userData p {
+    font-size: 13px;
+  }
+  .userData h1 {
+    font-size: 32px;
+  }
+  .dateOptions {
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+  }
+  .dateOptions p {
+    font-size: 16px;
+  }
+}

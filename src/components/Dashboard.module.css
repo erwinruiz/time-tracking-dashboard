@@ -5,3 +5,13 @@
   flex-direction: column;
   row-gap: 25px;
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    flex-direction: row;
+    column-gap: 25px;
+    row-gap: 0;
+  }
+}

@@ -59,3 +59,28 @@
     font-size: 20px;
   }
 }
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .activity .header {
+    margin-bottom: 20px;
+    gap: 60px;
+  }
+  .activity .header img {
+    width: initial;
+  }
+  .activity .header h3 {
+    font-size: initial;
+  }
+  .activity .report {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .activity .report .hours {
+    font-size: 42px;
+  }
+  .activity .report .previous {
+    font-size: 13px;
+  }
+}
