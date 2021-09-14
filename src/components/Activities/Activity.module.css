@@ -1,0 +1,61 @@
+.container {
+  border-radius: 15px;
+}
+.activityLogo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+.activityLogo img {
+  width: 79px;
+  height: 40px;
+  object-fit: cover;
+  object-position: 0 25%;
+}
+.activity {
+  background-color: var(--Darkblue);
+  border-radius: 15px;
+  padding: 30px 25px;
+}
+.activity .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.activity .header img {
+  cursor: pointer;
+}
+.activity .header h3 {
+  color: white;
+  font-weight: 500;
+}
+.activity .report {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.activity .report .hours {
+  color: white;
+  font-size: 32px;
+  font-weight: 300;
+}
+.activity .report .previous {
+  color: var(--Pale-Blue);
+}
+
+/* >= 550px */
+@media (min-width: 550px) {
+  .activity .header img {
+    width: 26px;
+  }
+  .activity .header h3 {
+    font-size: 26px;
+  }
+  .activity .report .hours {
+    font-size: 37px;
+  }
+  .activity .report .previous {
+    font-size: 20px;
+  }
+}
