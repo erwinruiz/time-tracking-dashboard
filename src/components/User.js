@@ -1,12 +1,14 @@
 import { useState } from "react";
 import classes from "./User.module.css";
 
-function User() {
+function User(props) {
   const [selectedDate, setSelectedDate] = useState("weekly");
 
   const dateHandler = (selectedDate) => {
     setSelectedDate(selectedDate);
+    props.onSelectDate(selectedDate);
   };
+
   return (
     <div className={classes.container}>
       <div className={classes.user}>

@@ -1,18 +1,15 @@
 import classes from "./Activity.module.css";
 
 function Activity(props) {
-  const {
-    title,
-    bgColor,
-    imgUrl,
-    imgAlt,
-    daily,
-    previousDaily,
-    weekly,
-    previousWeekly,
-    monthly,
-    previousMonthly,
-  } = props;
+  const { title, bgColor, imgUrl, imgAlt, hours, previousHours, previous } =
+    props;
+
+  let ModifiedPrevious;
+  if (previous === "daily") {
+    ModifiedPrevious = "day";
+  } else {
+    ModifiedPrevious = previous.substring(0, previous.length - 2);
+  }
 
   return (
     <div
@@ -28,9 +25,9 @@ function Activity(props) {
           <img src="./images/icon-ellipsis.svg" alt="ellipsis icon" />
         </div>
         <div className={classes.report}>
-          <p className={classes.hours}>{weekly}hrs</p>
+          <p className={classes.hours}>{hours}hrs</p>
           <p className={classes.previous}>
-            Last {"week"} - {previousWeekly}hrs
+            Last {ModifiedPrevious} - {previousHours}hrs
           </p>
         </div>
       </div>
