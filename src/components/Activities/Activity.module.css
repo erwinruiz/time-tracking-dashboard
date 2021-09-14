@@ -44,6 +44,26 @@
   color: var(--Pale-Blue);
 }
 
+/* Activities background colors */
+.work {
+  background-color: var(--Lightorange);
+}
+.play {
+  background-color: var(--Softblue);
+}
+.study {
+  background-color: var(--Lightred);
+}
+.exercise {
+  background-color: var(--Limegreen);
+}
+.social {
+  background-color: var(--Violet);
+}
+.selfcare {
+  background-color: var(--Softorange);
+}
+
 /* >= 550px */
 @media (min-width: 550px) {
   .activity .header img {

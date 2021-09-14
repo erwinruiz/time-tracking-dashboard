@@ -1,8 +1,7 @@
 import classes from "./Activity.module.css";
 
 function Activity(props) {
-  const { title, bgColor, imgUrl, imgAlt, hours, previousHours, previous } =
-    props;
+  const { title, imgUrl, imgAlt, hours, previousHours, previous } = props;
 
   let ModifiedPrevious;
   if (previous === "daily") {
@@ -11,11 +10,40 @@ function Activity(props) {
     ModifiedPrevious = previous.substring(0, previous.length - 2);
   }
 
+  let CSSClasses = classes.container;
+
+  switch (title) {
+    case "Work":
+      CSSClasses += ` ${classes.work}`;
+      break;
+
+    case "Play":
+      CSSClasses += ` ${classes.play}`;
+      break;
+
+    case "Study":
+      CSSClasses += ` ${classes.study}`;
+      break;
+
+    case "Exercise":
+      CSSClasses += ` ${classes.exercise}`;
+      break;
+
+    case "Social":
+      CSSClasses += ` ${classes.social}`;
+      break;
+
+    case "Self Care":
+      CSSClasses += ` ${classes.selfcare}`;
+      break;
+
+    default:
+      CSSClasses = classes.container;
+      break;
+  }
+
   return (
-    <div
-      className={classes.container}
-      style={{ backgroundColor: `var(${bgColor})` }}
-    >
+    <div className={CSSClasses}>
       <div className={classes.activityLogo}>
         <img src={imgUrl} alt={imgAlt} />
       </div>

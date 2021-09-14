@@ -1,7 +1,6 @@
 const activities = [
   {
     title: "Work",
-    bgColor: "--Lightorange",
     imgUrl: "./images/icon-work.svg",
     imgAlt: "work icon",
     daily: 5,
@@ -13,7 +12,6 @@ const activities = [
   },
   {
     title: "Play",
-    bgColor: "--Softblue",
     imgUrl: "./images/icon-play.svg",
     imgAlt: "play icon",
     daily: 1,
@@ -25,7 +23,6 @@ const activities = [
   },
   {
     title: "Study",
-    bgColor: "--Lightred",
     imgUrl: "./images/icon-study.svg",
     imgAlt: "study icon",
     daily: 0,
@@ -37,7 +34,6 @@ const activities = [
   },
   {
     title: "Exercise",
-    bgColor: "--Limegreen",
     imgUrl: "./images/icon-exercise.svg",
     imgAlt: "exercise icon",
     daily: 1,
@@ -49,7 +45,6 @@ const activities = [
   },
   {
     title: "Social",
-    bgColor: "--Violet",
     imgUrl: "./images/icon-social.svg",
     imgAlt: "social icon",
     daily: 1,
@@ -61,7 +56,6 @@ const activities = [
   },
   {
     title: "Self Care",
-    bgColor: "--Softorange",
     imgUrl: "./images/icon-self-care.svg",
     imgAlt: "self care icon",
     daily: 0,

@@ -36,7 +36,6 @@ function Activities(props) {
           <Activity
             key={i}
             title={activity.title}
-            bgColor={activity.bgColor}
             imgUrl={activity.imgUrl}
             imgAlt={activity.imgAlt}
             hours={hours}
