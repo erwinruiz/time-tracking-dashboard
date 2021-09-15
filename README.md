@@ -1,4 +1,6 @@
-# Frontend Mentor - Time tracking dashboard solution
+# Time tracking dashboard
+
+Challenge by [Frontend Mentor](https://www.frontendmentor.io?ref=challenge). Coded by Erwin Ruiz.
 
 ## Table of contents
 
@@ -21,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here]()
+- Solution URL: [Click here](https://erwinruiz.github.io/time-tracking-dashboard/)
 
 ### Built with
 
@@ -39,6 +41,7 @@ The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+![](./screenshots/desktop-design.png)
+![](./screenshots/mobile-design.png)
