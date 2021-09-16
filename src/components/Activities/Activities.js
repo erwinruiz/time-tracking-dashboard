@@ -12,23 +12,23 @@ function Activities(props) {
         let previous;
         switch (selectedDate) {
           case "daily":
-            hours = activity.daily;
-            previous = activity.previousDaily;
+            hours = activity.daily.current;
+            previous = activity.daily.previous;
             break;
 
           case "weekly":
-            hours = activity.weekly;
-            previous = activity.previousWeekly;
+            hours = activity.weekly.current;
+            previous = activity.weekly.previous;
             break;
 
           case "monthly":
-            hours = activity.monthly;
-            previous = activity.previousMonthly;
+            hours = activity.monthly.current;
+            previous = activity.monthly.previous;
             break;
 
           default:
-            hours = activity.weekly;
-            previous = activity.previousWeekly;
+            hours = activity.weekly.current;
+            previous = activity.weekly.previous;
             break;
         }
 
